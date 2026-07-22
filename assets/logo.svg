@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg-white { fill: #FFFFFF; }
+      .brand-green { fill: #0B4F2C; stroke: #0B4F2C; }
+      .stroke-green { stroke: #0B4F2C; fill: none; }
+      .stroke-gold { stroke: #C5A059; fill: none; }
+      .fill-gold { fill: #C5A059; }
+      .text-green { fill: #0B4F2C; font-family: 'Times New Roman', serif; font-weight: bold; }
+      .text-tamil-bold { fill: #0B4F2C; font-family: 'Noto Sans Tamil', 'Hind Madurai', sans-serif; font-weight: 800; }
+      .text-tamil-med { fill: #0B4F2C; font-family: 'Noto Sans Tamil', 'Hind Madurai', sans-serif; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Base Circle Background -->
+  <circle cx="400" cy="400" r="390" class="bg-white" />
+  
+  <!-- Outer Dark Green Ring -->
+  <circle cx="400" cy="400" r="380" stroke="#0B4F2C" stroke-width="18" fill="none" />
+  <circle cx="400" cy="400" r="366" stroke="#C5A059" stroke-width="3" fill="none" />
+  
+  <!-- Inner Fine Ring -->
+  <circle cx="400" cy="400" r="358" stroke="#0B4F2C" stroke-width="2" fill="none" />
+
+  <!-- TOP GRAPHIC - Cart & Produce Emblem -->
+  <g transform="translate(0, 0)">
+    <!-- Cart Arc Top -->
+    <path d="M 280 180 A 130 130 0 0 1 520 180" stroke="#C5A059" stroke-width="6" fill="none" />
+    
+    <!-- Big Letter 'A' -->
+    <text x="400" y="180" font-family="'Times New Roman', serif" font-size="110" font-weight="bold" fill="#0B4F2C" text-anchor="middle">A</text>
+    
+    <!-- Shopping Cart Handle & Base -->
+    <path d="M 225 178 L 260 178 L 305 285 L 500 285" stroke="#0B4F2C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <circle cx="315" cy="328" r="16" stroke="#0B4F2C" stroke-width="8" fill="none" />
+    <circle cx="455" cy="328" r="16" stroke="#0B4F2C" stroke-width="8" fill="none" />
+    
+    <!-- Produce Items in Cart -->
+    <!-- Oil Bottle -->
+    <path d="M 305 220 L 320 220 L 325 240 L 340 240 L 345 285 L 300 285 Z" fill="#E6A100" stroke="#0B4F2C" stroke-width="3" />
+    <!-- Grain Basket -->
+    <path d="M 340 235 Q 370 200 400 235 Z" fill="#D4AF37" stroke="#0B4F2C" stroke-width="3" />
+    <ellipse cx="370" cy="255" rx="35" ry="25" fill="#D2B48C" stroke="#0B4F2C" stroke-width="3" />
+    <!-- Grocery Packets -->
+    <rect x="410" y="210" width="35" height="50" rx="4" fill="#0B4F2C" />
+    <rect x="420" y="220" width="15" height="15" fill="#FFC107" />
+    <!-- Green Leaves -->
+    <path d="M 450 250 Q 480 180 520 180 Q 510 230 450 250 Z" fill="#2E7D32" stroke="#0B4F2C" stroke-width="2" />
+    <path d="M 470 215 Q 490 200 500 190" stroke="#81C784" stroke-width="3" fill="none" />
+  </g>
+
+  <!-- LEFT BADGE - Quality & Low Price -->
+  <g transform="translate(85, 205)">
+    <path d="M 20 0 Q 60 -15 100 0 Q 115 40 100 80 Q 60 95 20 80 Q 5 40 20 0 Z" fill="#FFFFFF" stroke="#0B4F2C" stroke-width="2" />
+    <path d="M 25 5 Q 60 -10 95 5 Q 108 40 95 75 Q 60 88 25 75 Q 12 40 25 5 Z" fill="none" stroke="#C5A059" stroke-width="1.5" stroke-dasharray="4 2" />
+    <text x="60" y="32" font-family="'Noto Sans Tamil', sans-serif" font-size="16" font-weight="bold" fill="#0B4F2C" text-anchor="middle">தரமான</text>
+    <text x="60" y="52" font-family="'Noto Sans Tamil', sans-serif" font-size="16" font-weight="bold" fill="#0B4F2C" text-anchor="middle">பொருட்கள்</text>
+    <line x1="40" y1="58" x2="80" y2="58" stroke="#C5A059" stroke-width="1" />
+    <text x="60" y="74" font-family="'Noto Sans Tamil', sans-serif" font-size="14" font-weight="bold" fill="#0B4F2C" text-anchor="middle">குறைந்த விலை</text>
+  </g>
+
+  <!-- RIGHT BADGES - Wholesale & Trusted Service -->
+  <g transform="translate(605, 185)">
+    <!-- Truck icon -->
+    <path d="M 10 15 L 35 15 L 45 28 L 55 28 L 55 42 L 10 42 Z" fill="#0B4F2C" />
+    <circle cx="20" cy="44" r="5" fill="#C5A059" />
+    <circle cx="45" cy="44" r="5" fill="#C5A059" />
+    <text x="32" y="62" font-family="'Noto Sans Tamil', sans-serif" font-size="17" font-weight="bold" fill="#0B4F2C" text-anchor="middle">மொத்த</text>
+    <text x="32" y="82" font-family="'Noto Sans Tamil', sans-serif" font-size="17" font-weight="bold" fill="#0B4F2C" text-anchor="middle">விற்பனை</text>
+
+    <!-- Handshake icon -->
+    <g transform="translate(0, 88)">
+      <path d="M 15 12 L 28 25 L 35 18 L 48 28 L 38 38 L 25 28 L 18 35 Z" fill="#0B4F2C" />
+      <text x="32" y="54" font-family="'Noto Sans Tamil', sans-serif" font-size="15" font-weight="bold" fill="#0B4F2C" text-anchor="middle">நம்பகமான</text>
+      <text x="32" y="72" font-family="'Noto Sans Tamil', sans-serif" font-size="15" font-weight="bold" fill="#0B4F2C" text-anchor="middle">சேவை</text>
+    </g>
+  </g>
+
+  <!-- MAIN BRAND TEXT -->
+  <!-- AYYNAR STORES (English) -->
+  <g transform="translate(400, 420)">
+    <text x="0" y="0" font-family="'Times New Roman', Georgia, serif" font-size="64" font-weight="900" letter-spacing="6" fill="#0B4F2C" text-anchor="middle">AYYNAR</text>
+    <line x1="-250" y1="30" x2="-160" y2="30" stroke="#C5A059" stroke-width="3" />
+    <text x="0" y="42" font-family="'Times New Roman', Georgia, serif" font-size="34" font-weight="bold" letter-spacing="14" fill="#C5A059" text-anchor="middle">STORES</text>
+    <line x1="160" y1="30" x2="250" y2="30" stroke="#C5A059" stroke-width="3" />
+  </g>
+
+  <!-- அய்யனார் ஸ்டோர்ஸ் (Tamil) -->
+  <text x="400" y="530" font-family="'Noto Sans Tamil', 'Hind Madurai', sans-serif" font-size="46" font-weight="900" letter-spacing="2" fill="#0B4F2C" text-anchor="middle">அய்யனார் ஸ்டோர்ஸ்</text>
+
+  <!-- SUB TAGLINE LINE -->
+  <line x1="100" y1="550" x2="700" y2="550" stroke="#0B4F2C" stroke-width="2" />
+  <text x="400" y="575" font-family="'Noto Sans Tamil', sans-serif" font-size="20" font-weight="bold" fill="#0B4F2C" text-anchor="middle">
+    மளிகை பொருட்கள்  |  மொத்த விற்பனை  |  குறைந்த விலை
+  </text>
+
+  <!-- BOTTOM SERVICE CATEGORY ICONS & LABELS -->
+  <line x1="100" y1="595" x2="700" y2="595" stroke="#C5A059" stroke-width="1.5" />
+
+  <!-- Hotel -->
+  <g transform="translate(180, 610)">
+    <path d="M 15 25 Q 30 5 45 25 Z" fill="#0B4F2C" />
+    <rect x="10" y="25" width="40" height="5" rx="2" fill="#0B4F2C" />
+    <text x="30" y="48" font-family="'Noto Sans Tamil', sans-serif" font-size="16" font-weight="bold" fill="#0B4F2C" text-anchor="middle">ஹோட்டல்கள்</text>
+  </g>
+
+  <line x1="260" y1="605" x2="260" y2="660" stroke="#0B4F2C" stroke-width="1.5" />
+
+  <!-- Restaurant -->
+  <g transform="translate(310, 610)">
+    <path d="M 18 10 L 18 28 M 24 10 L 24 28 M 30 10 L 30 28 M 18 28 Q 24 35 30 28 M 24 35 L 24 45" stroke="#0B4F2C" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 40 10 L 40 24 Q 40 32 35 34 L 35 45" stroke="#0B4F2C" stroke-width="3" stroke-linecap="round" fill="none" />
+    <text x="30" y="48" font-family="'Noto Sans Tamil', sans-serif" font-size="16" font-weight="bold" fill="#0B4F2C" text-anchor="middle">ரெஸ்டாரங்கள்</text>
+  </g>
+
+  <line x1="390" y1="605" x2="390" y2="660" stroke="#0B4F2C" stroke-width="1.5" />
+
+  <!-- Catering -->
+  <g transform="translate(440, 610)">
+    <path d="M 15 25 Q 15 10 30 10 Q 45 10 45 25 Z" fill="#0B4F2C" />
+    <rect x="15" y="25" width="30" height="8" fill="#C5A059" />
+    <text x="30" y="48" font-family="'Noto Sans Tamil', sans-serif" font-size="16" font-weight="bold" fill="#0B4F2C" text-anchor="middle">கேட்டரிங் சேவைகள்</text>
+  </g>
+
+  <line x1="535" y1="605" x2="535" y2="660" stroke="#0B4F2C" stroke-width="1.5" />
+
+  <!-- Retail -->
+  <g transform="translate(580, 610)">
+    <rect x="18" y="18" width="24" height="22" rx="3" fill="#0B4F2C" />
+    <path d="M 23 18 A 7 7 0 0 1 37 18" stroke="#C5A059" stroke-width="3" fill="none" />
+    <text x="30" y="48" font-family="'Noto Sans Tamil', sans-serif" font-size="16" font-weight="bold" fill="#0B4F2C" text-anchor="middle">சில்லறை விற்பனை</text>
+  </g>
+
+  <!-- BOTTOM RIBBON CURVE -->
+  <g transform="translate(0, 675)">
+    <path d="M 180 15 Q 400 65 620 15 L 670 65 Q 400 115 130 65 Z" fill="#0B4F2C" />
+    <path d="M 200 24 Q 400 70 600 24" stroke="#C5A059" stroke-width="2" fill="none" />
+    <text x="400" y="58" font-family="'Noto Sans Tamil', sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      உங்கள் நம்பிக்கைக்குரிய வணிக துணை
+    </text>
+  </g>
+</svg>
