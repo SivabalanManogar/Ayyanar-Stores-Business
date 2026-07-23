@@ -203,10 +203,24 @@ textarea {
   transform: translateY(-3px);
 }
 
-.btn-whatsapp:hover {
-  background-color: #1EBE5D;
+.btn-whatsapp,
+a.btn-whatsapp,
+button.btn-whatsapp {
+  background-color: #25D366 !important;
+  color: #FFFFFF !important;
+  border: 2px solid #25D366 !important;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover,
+a.btn-whatsapp:hover,
+button.btn-whatsapp:hover {
+  background-color: #1EBE5D !important;
+  color: #FFFFFF !important;
+  border-color: #1EBE5D !important;
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
 }
 
 .btn-lang-hero {
