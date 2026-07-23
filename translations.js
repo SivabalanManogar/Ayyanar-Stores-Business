@@ -42,7 +42,7 @@ const translations = {
     // Product Categories
     prod_title: "Our Product Categories",
     prod_subtitle: "Wide Range of Grocery Essentials Available in Retail & Wholesale Quantities",
-    
+
     cat1_title: "Rice & Grains",
     cat1_items: "Rice, Wheat Flour, Maida, Rava",
     cat1_badge: "Wholesale Bags Available",
@@ -71,28 +71,28 @@ const translations = {
     hotel_title: "Trusted Wholesale Partner for Hotels & Restaurants",
     hotel_subtitle: "Specialized Wholesale Grocery Supply tailored for Commercial Kitchens & Food Businesses",
     hotel_desc: "New Ayyanar Stores specializes in supplying grocery products at competitive wholesale prices to local hotels, restaurants, catering services, tea shops, bakeries, messes, schools, offices, and food establishments with fast and reliable order processing.",
-    
+
     h_card1_title: "Hotels",
     h_card1_desc: "Bulk rice, pulses, and cooking oils for daily hotel dining and room service menus.",
-    
+
     h_card2_title: "Restaurants",
     h_card2_desc: "Consistent grade spices, masalas, ghee, and essentials for authentic flavor & consistency.",
-    
+
     h_card3_title: "Catering Services",
     h_card3_desc: "Large quantity bulk supplies tailored for marriage caterers and event banquets.",
-    
+
     h_card4_title: "Mess & Canteens",
     h_card4_desc: "Affordable bulk grocery packages for hostel messes, industrial and factory canteens.",
-    
+
     h_card5_title: "Tea Shops",
     h_card5_desc: "Quality tea powder, sugar, milk products, and snacks supply at wholesale rates.",
-    
+
     h_card6_title: "Bakeries",
     h_card6_desc: "High-grade Maida, Sugar, Butter, Ghee, and baking ingredients in commercial bags.",
-    
+
     h_card7_title: "Corporate Kitchens",
     h_card7_desc: "Regular monthly & weekly pantry grocery supplies for IT parks and corporate offices.",
-    
+
     h_card8_title: "School & College Canteens",
     h_card8_desc: "Hygienic, quality-tested staple ingredients for institutional kitchens & cafeterias.",
 
@@ -123,37 +123,37 @@ const translations = {
     // Why Choose Us
     why_title: "Why Choose New Ayyanar Stores",
     why_subtitle: "Your Business Success and Satisfaction are Our Priority",
-    
+
     w1_title: "Quality Products",
     w1_desc: "100% genuine, handpicked, and quality checked staple items.",
-    
+
     w2_title: "Competitive Wholesale Prices",
     w2_desc: "Best market rates ensuring higher profit margins for your food business.",
-    
+
     w3_title: "Affordable Retail Prices",
     w3_desc: "Fair and transparent pricing for daily family grocery shoppers.",
-    
+
     w4_title: "Reliable Stock Availability",
     w4_desc: "Ready stock of high volume grains, pulses, and oils at all times.",
-    
+
     w5_title: "Fresh Products Always",
     w5_desc: "Fast inventory turnover guarantees fresh stock on every purchase.",
-    
+
     w6_title: "Bulk Orders Accepted",
     w6_desc: "Capacity to fulfill large-scale function orders on short notice.",
-    
+
     w7_title: "Trusted Local Supplier",
     w7_desc: "Over a decade of reputable business presence in the community.",
-    
+
     w8_title: "Fast & Prompt Service",
     w8_desc: "Quick order packing, invoice processing, and pickup dispatch.",
-    
+
     w9_title: "Friendly & Helpful Staff",
     w9_desc: "Courteous customer care ready to assist your exact product requirements.",
-    
+
     w10_title: "100% Customer Satisfaction",
     w10_desc: "Dedicated to exceeding customer expectations on every interaction.",
-    
+
     w11_title: "Long-Term Partnerships",
     w11_desc: "We build enduring commercial relationships based on mutual trust.",
 
@@ -170,28 +170,27 @@ const translations = {
     // Contact Section
     contact_title: "Contact New Ayyanar Stores",
     contact_subtitle: "Get in Touch for Wholesale Inquiries, Bulk Orders, or Store Visits",
-    
+
     info_phone_heading: "Call Us",
     info_phone_val: "+91 97150 98017 / +91 80128 60453",
-    
+
     info_whatsapp_heading: "WhatsApp Inquiries",
     info_whatsapp_val: "+91 97150 98017 / +91 80128 60453",
-    
+
     info_owner_heading: "Proprietor",
     owner_name: "MANOGAR.P",
     hero_owner_badge: "Proprietor: MANOGAR.P",
     owner_label: "Proprietor / Founder",
     about_owner_text: "Under the leadership of proprietor MANOGAR.P, New Ayyanar Stores is committed to delivering premium quality groceries and reliable bulk supply with honesty and trust.",
     footer_owner: "Proprietor: MANOGAR.P",
-    
+
     info_address_heading: "Store Location",
     info_address_val: "New Ayyanar Stores, Neyveli Main Road, Vadalur, Tamil Nadu - 607303",
-    
+
     info_hours_heading: "Business Hours",
     info_hours_val: "Monday - Saturday: 7:00 AM - 9:30 PM\nSunday: 7:00 AM - 9:30 PM",
 
     form_heading: "Send an Inquiry",
-    form_order_subtitle: "Place Your Orders Here Via WhatsApp*",
     form_name: "Your Name",
     form_phone: "Mobile Number",
     form_type: "Customer Type",
@@ -243,7 +242,6 @@ const translations = {
     hero_desc: "நியூ அய்யனார் ஸ்டோர்ஸ் என்பது தரமான மளிகைப் பொருட்களை குறைந்த மற்றும் போட்டி விலையில் வழங்கும் நம்பிக்கையான மொத்த & சில்லறை விற்பனை நிலையமாகும். ஹோட்டல்கள், உணவகங்கள், கேட்டரிங் சேவைகள், வணிக நிறுவனங்கள் மற்றும் குடும்பங்களுக்கு உயர்தர சேவையை வழங்கி வருகிறோம்.",
     btn_call: "இப்போது அழைக்கவும்",
     btn_whatsapp: "வாட்ஸ்அப்",
-    btn_place_order: "ஆர்டர் செய்ய",
     btn_directions: "திசைகளைப் பெறவும்",
     btn_lang_hero: "English (ஆங்கிலம்)",
     badge_wholesale_prices: "குறைந்த மொத்த விலை",
@@ -266,7 +264,7 @@ const translations = {
     // Product Categories
     prod_title: "எங்களின் தயாரிப்பு பிரிவுகள்",
     prod_subtitle: "சில்லறை மற்றும் மொத்த விற்பனையில் கிடைக்கும் அத்தியாவசிய மளிகைப் பொருட்கள்",
-    
+
     cat1_title: "அரிசி & தானியங்கள்",
     cat1_items: "அரிசி, கோதுமை மாவு, மைதா, ரவா",
     cat1_badge: "மொத்த மூட்டைகள் கிடைக்கும்",
@@ -295,28 +293,28 @@ const translations = {
     hotel_title: "ஹோட்டல்கள் & ரெஸ்டாரண்டுகளுக்கான நம்பகமான மொத்த பங்குதாரர்",
     hotel_subtitle: "வணிக சமையலறைகள் மற்றும் உணவு வணிகங்களுக்கான சிறப்பு மொத்த விநியோகம்",
     hotel_desc: "நியூ அய்யனார் ஸ்டோர்ஸ் உள்ளூர் ஹோட்டல்கள், உணவகங்கள், கேட்டரிங் சேவைகள், தேநீர் கடைகள், பேக்கரிகள், மெஸ், பள்ளிகள், அலுவலகங்கள் மற்றும் உணவு நிறுவனங்களுக்கு போட்டித்தன்மை வாய்ந்த மொத்த விலையில் மளிகைப் பொருட்களை விரைவாக விநியோகிக்கிறது.",
-    
+
     h_card1_title: "ஹோட்டல்கள்",
     h_card1_desc: "தினசரி உணவுகளுக்கான மொத்த அரிசி, பருப்பு மற்றும் சமையல் எண்ணெய்கள்.",
-    
+
     h_card2_title: "ரெஸ்டாரண்டுகள்",
     h_card2_desc: "மாறாத சுவை மற்றும் தரத்திற்கு சிறந்த நறுமணப் பொருட்கள், மசாலாக்கள் மற்றும் நெய்.",
-    
+
     h_card3_title: "கேட்டரிங் சேவைகள்",
     h_card3_desc: "திருமணங்கள் மற்றும் பெருவிழா சமையல்களுக்கான பெரிய அளவிலான பல்க் சப்ளை.",
-    
+
     h_card4_title: "மெஸ் & கேன்டீன்கள்",
     h_card4_desc: "ஹாஸ்டல் மெஸ் மற்றும் தொழிற்சாலை கேன்டீன்களுக்கான மலிவான மொத்த மளிகைத் தொகுப்புகள்.",
-    
+
     h_card5_title: "தேநீர் கடைகள்",
     h_card5_desc: "தேயிலைத் தூள், சர்க்கரை, பால் பொருட்கள் மற்றும் நொறுக்குத் தீனிகள் மொத்த விலையில்.",
-    
+
     h_card6_title: "பேக்கரிகள்",
     h_card6_desc: "உயர்தர மைதா, சர்க்கரை, வெண்ணெய், நெய் மற்றும் பேக்கிங் பொருட்கள்.",
-    
+
     h_card7_title: "கார்ப்பரேட் சமையலறைகள்",
     h_card7_desc: "ஐடி பூங்காக்கள் மற்றும் கார்ப்பரேட் அலுவலகங்களுக்கான வழக்கமான மளிகைப் பொருட்கள்.",
-    
+
     h_card8_title: "பள்ளி & கல்லூரி கேன்டீன்கள்",
     h_card8_desc: "கல்வி நிறுவன சமையலறைகளுக்கான சுத்தமான மற்றும் தரமான அத்தியாவசிய பொருட்கள்.",
 
@@ -347,37 +345,37 @@ const translations = {
     // Why Choose Us
     why_title: "ஏன் நியூ அய்யனார் ஸ்டோர்ஸை தேர்வு செய்ய வேண்டும்?",
     why_subtitle: "உங்கள் வணிக வெற்றியும் திருப்தியுமே எங்களின் முதன்மை இலக்கு",
-    
+
     w1_title: "தரமான பொருட்கள்",
     w1_desc: "100% அசல், தேர்ந்தெடுக்கப்பட்ட மற்றும் தரம் பரிசோதிக்கப்பட்ட மளிகைப் பொருட்கள்.",
-    
+
     w2_title: "போட்டித்தன்மை வாய்ந்த மொத்த விலை",
     w2_desc: "உங்கள் உணவு வணிகத்தின் லாபத்தை அதிகரிக்கும் சிறந்த சந்தை விலைகள்.",
-    
+
     w3_title: "மலிவான சில்லறை விலை",
     w3_desc: "தினசரி குடும்பக் கொள்முதலுக்கு நேர்மையான மற்றும் வெளிப்படை விலை.",
-    
+
     w4_title: "நம்பகமான ஸ்டாக் இருப்பு",
     w4_desc: "தானியங்கள், பருப்புகள் மற்றும் எண்ணெய்கள் எப்போதும் தயாராக இருப்பவை.",
-    
+
     w5_title: "எப்போதும் புதிய பொருட்கள்",
     w5_desc: "வேகமான ஸ்டாக் சுழற்சியால் எப்போதும் புதிய பொருட்களைப் பெறலாம்.",
-    
+
     w6_title: "பல்க் ஆர்டர்கள் ஏற்றுக்கொள்ளப்படும்",
     w6_desc: "குறுகிய காலத்தில் பெரிய அளவிலான விழா ஆர்டர்களை பூர்த்தி செய்யும் திறன்.",
-    
+
     w7_title: "நம்பகமான உள்ளூர் விநியோகஸ்தர்",
     w7_desc: "ஒரு தசாப்தத்திற்கும் மேலாக உள்ளூர் மக்களிடையே நற்பெயர் பெற்ற நிறுவனம்.",
-    
+
     w8_title: "வேகமான & சுறுசுறுப்பான சேவை",
     w8_desc: "விரைவான ஆர்டர் பேக்கிங், பில்லிங் மற்றும் வாகன அனுப்பீடு.",
-    
+
     w9_title: "நட்பான பணியாளர்கள்",
     w9_desc: "உங்கள் தேவைகளுக்கு உதவ தயாராக உள்ள மரியாதையான வாடிக்கையாளர் சேவை.",
-    
+
     w10_title: "100% வாடிக்கையாளர் திருப்தி",
     w10_desc: "ஒவ்வொரு விநியோகத்திலும் வாடிக்கையாளர் எதிர்பார்ப்பை பூர்த்தி செய்தல்.",
-    
+
     w11_title: "நீண்டகால வணிக பங்காளித்துவம்",
     w11_desc: "பரஸ்பர நம்பிக்கையின் அடிப்படையில் நீடித்த வணிக உறவை உருவாக்குகிறோம்.",
 
@@ -394,28 +392,27 @@ const translations = {
     // Contact Section
     contact_title: "நியூ அய்யனார் ஸ்டோர்ஸை தொடர்புகொள்ள",
     contact_subtitle: "மொத்த விற்பனை, பல்க் ஆர்டர்கள் அல்லது கடை வருகைக்கு தொடர்புகொள்ளவும்",
-    
+
     info_phone_heading: "தொலைபேசி எண்",
     info_phone_val: "+91 97150 98017 / +91 80128 60453",
-    
+
     info_whatsapp_heading: "வாட்ஸ்அப் விசாரணை",
     info_whatsapp_val: "+91 97150 98017 / +91 80128 60453",
-    
+
     info_owner_heading: "உரிமையாளர்",
     owner_name: "மனோகர்.P",
     hero_owner_badge: "உரிமையாளர்: மனோகர்.P",
     owner_label: "உரிமையாளர்",
     about_owner_text: "உரிமையாளர் மனோகர்.P அவர்களின் சிறந்த வழிநடத்துதலில், நியூ அய்யனார் ஸ்டோர்ஸ் உயர்தர மளிகைப் பொருட்கள் விநியோகம் மற்றும் வாடிக்கையாளர் நம்பிக்கையில் சிறந்து விளங்குகிறது.",
     footer_owner: "உரிமையாளர்: மனோகர்.P",
-    
+
     info_address_heading: "கடை முகவரி",
     info_address_val: "நியூ அய்யனார் ஸ்டோர்ஸ், நெய்வேலி மெயின் ரோடு, வடலூர், தமிழ்நாடு - 607303",
-    
+
     info_hours_heading: "கடை இயங்கும் நேரம்",
     info_hours_val: "திங்கள் - சனிக்கிழமை: காலை 7:00 - இரவு 9:30\nஞாயிற்றுக்கிழமை: காலை 7:00 - இரவு 9:30",
 
     form_heading: "விசாரணை அனுப்பவும்",
-    form_order_subtitle: "வாட்ஸ்அப் மூலம் உங்கள் ஆர்டர்களை இங்கே பதிவு செய்யவும்*",
     form_name: "உங்கள் பெயர்",
     form_phone: "கைப்பேசி எண்",
     form_type: "வாடிக்கையாளர் வகை",
