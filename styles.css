@@ -203,8 +203,17 @@ textarea {
   transform: translateY(-3px);
 }
 
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #FFFFFF;
+  border: 2px solid #25D366;
+  font-weight: 700;
+}
+
 .btn-whatsapp:hover {
   background-color: #1EBE5D;
+  color: #FFFFFF;
+  border-color: #1EBE5D;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
 }
@@ -2158,25 +2167,13 @@ body {
 
   /* ---- Hero ---- */
   .hero-section {
-    padding-top: 105px;
+    padding-top: 110px;
     padding-bottom: 50px;
   }
 
-  .hero-image-wrapper {
-    order: -1;
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
-
   .hero-content {
-    order: 1;
     align-items: center;
     text-align: center;
-    width: 100%;
-  }
-
-  .hero-content > div:first-child {
-    justify-content: center;
   }
 
   .hero-cta-group {
@@ -2199,8 +2196,8 @@ body {
   }
 
   .hero-logo-card {
-    width: 210px;
-    height: 210px;
+    width: 240px;
+    height: 240px;
     margin: 0 auto;
   }
 
@@ -2334,8 +2331,8 @@ body {
   }
 
   .hero-logo-card {
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 200px;
   }
 
   .section-title {
@@ -2365,11 +2362,6 @@ body {
   .brand-logo img {
     height: 38px;
     width: 38px;
-  }
-
-  .hero-logo-card {
-    width: 150px;
-    height: 150px;
   }
 
   .hero-title {
