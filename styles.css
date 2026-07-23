@@ -203,17 +203,8 @@ textarea {
   transform: translateY(-3px);
 }
 
-.btn-whatsapp {
-  background-color: #25D366;
-  color: #FFFFFF;
-  border: 2px solid #25D366;
-  font-weight: 700;
-}
-
 .btn-whatsapp:hover {
   background-color: #1EBE5D;
-  color: #FFFFFF;
-  border-color: #1EBE5D;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
 }
@@ -2167,20 +2158,52 @@ body {
 
   /* ---- Hero ---- */
   .hero-section {
-    padding-top: 110px;
-    padding-bottom: 50px;
+    padding-top: 105px;
+    padding-bottom: 45px;
+  }
+
+  .hero-desc {
+    display: none !important;
   }
 
   .hero-content {
-    align-items: center;
+    display: contents;
+  }
+
+  .hero-content > div:first-child {
+    order: 1;
+    justify-content: center;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .hero-title {
+    order: 2;
+    margin-bottom: 0.4rem;
     text-align: center;
   }
 
+  .hero-subtitle {
+    order: 3;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+
+  .hero-image-wrapper {
+    order: 4;
+    width: 100%;
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: center;
+  }
+
   .hero-cta-group {
+    order: 5;
     justify-content: center;
     flex-wrap: wrap;
     gap: 0.75rem;
     width: 100%;
+    margin-bottom: 1.5rem;
   }
 
   .hero-cta-group .btn {
@@ -2190,14 +2213,15 @@ body {
   }
 
   .hero-features-row {
+    order: 6;
     justify-content: center;
     flex-wrap: wrap;
     gap: 0.6rem;
   }
 
   .hero-logo-card {
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
   }
 
