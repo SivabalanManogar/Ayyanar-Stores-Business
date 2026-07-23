@@ -719,7 +719,8 @@ textarea {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .brand-logo img {
@@ -729,6 +730,7 @@ textarea {
   border-radius: 50%;
   border: 1.5px solid var(--accent-gold);
   transition: var(--transition);
+  flex-shrink: 0;
 }
 
 .brand-logo:hover img {
@@ -738,6 +740,7 @@ textarea {
 .brand-text {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .brand-title {
@@ -846,6 +849,9 @@ body.lang-ta .lang-toggle-btn {
   font-size: 1.7rem;
   color: var(--primary-green);
   cursor: pointer;
+  flex-shrink: 0;
+  z-index: 1001;
+  padding: 0.25rem;
 }
 
 /* ==========================================================================
@@ -1926,8 +1932,26 @@ html, body {
 
 /* Laptops / Tablets / Mobile (1150px and below) */
 @media (max-width: 1150px) {
+  .header .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .navbar {
+    gap: 0.75rem;
+  }
+
   .mobile-toggle {
     display: block;
+    flex-shrink: 0;
+  }
+
+  body.lang-ta .brand-title {
+    font-size: 1.05rem;
+  }
+
+  body.lang-ta .brand-tagline {
+    font-size: 0.62rem;
   }
 
   .nav-menu {
@@ -2117,12 +2141,40 @@ html, body {
 
 /* Mobile Devices (480px and below) */
 @media (max-width: 480px) {
+  .header .container {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+
+  .navbar {
+    gap: 0.5rem;
+  }
+
+  .brand-logo {
+    gap: 0.5rem;
+  }
+
+  .brand-logo img {
+    height: 44px;
+    width: 44px;
+  }
+
   .brand-title {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .brand-tagline {
-    font-size: 0.6rem;
+    font-size: 0.58rem;
+  }
+
+  body.lang-ta .brand-title {
+    font-size: 0.9rem;
+    letter-spacing: 0;
+  }
+
+  body.lang-ta .brand-tagline {
+    font-size: 0.55rem;
+    letter-spacing: 0;
   }
 
   .hero-title {
@@ -2167,12 +2219,29 @@ html, body {
 
 /* Extra small (360px and below) */
 @media (max-width: 360px) {
+  .brand-logo img {
+    height: 38px;
+    width: 38px;
+  }
+
   .hero-title {
     font-size: 1.6rem;
   }
 
   .brand-title {
-    font-size: 0.88rem;
+    font-size: 0.85rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.52rem;
+  }
+
+  body.lang-ta .brand-title {
+    font-size: 0.82rem;
+  }
+
+  body.lang-ta .brand-tagline {
+    font-size: 0.5rem;
   }
 
   .section-title {
