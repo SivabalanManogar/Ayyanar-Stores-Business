@@ -19,6 +19,7 @@ const translations = {
     hero_desc: "New Ayyanar Stores is a trusted grocery and wholesale supplier providing quality products at competitive prices. We proudly serve retail customers, hotels, restaurants, catering services, businesses, and families with reliable service and quality products.",
     btn_call: "Call Now",
     btn_whatsapp: "WhatsApp",
+    btn_place_order: "Place Your Orders",
     btn_directions: "Get Directions",
     btn_lang_hero: "தமிழ் (Tamil)",
     badge_wholesale_prices: "Best Wholesale Prices",
@@ -190,6 +191,7 @@ const translations = {
     info_hours_val: "Monday - Saturday: 7:00 AM - 9:30 PM\nSunday: 7:00 AM - 9:30 PM",
 
     form_heading: "Send an Inquiry",
+    form_order_subtitle: "Place Your Orders Here Via WhatsApp*",
     form_name: "Your Name",
     form_phone: "Mobile Number",
     form_type: "Customer Type",
@@ -241,6 +243,7 @@ const translations = {
     hero_desc: "நியூ அய்யனார் ஸ்டோர்ஸ் என்பது தரமான மளிகைப் பொருட்களை குறைந்த மற்றும் போட்டி விலையில் வழங்கும் நம்பிக்கையான மொத்த & சில்லறை விற்பனை நிலையமாகும். ஹோட்டல்கள், உணவகங்கள், கேட்டரிங் சேவைகள், வணிக நிறுவனங்கள் மற்றும் குடும்பங்களுக்கு உயர்தர சேவையை வழங்கி வருகிறோம்.",
     btn_call: "இப்போது அழைக்கவும்",
     btn_whatsapp: "வாட்ஸ்அப்",
+    btn_place_order: "ஆர்டர் செய்ய",
     btn_directions: "திசைகளைப் பெறவும்",
     btn_lang_hero: "English (ஆங்கிலம்)",
     badge_wholesale_prices: "குறைந்த மொத்த விலை",
@@ -412,6 +415,7 @@ const translations = {
     info_hours_val: "திங்கள் - சனிக்கிழமை: காலை 7:00 - இரவு 9:30\nஞாயிற்றுக்கிழமை: காலை 7:00 - இரவு 9:30",
 
     form_heading: "விசாரணை அனுப்பவும்",
+    form_order_subtitle: "வாட்ஸ்அப் மூலம் உங்கள் ஆர்டர்களை இங்கே பதிவு செய்யவும்*",
     form_name: "உங்கள் பெயர்",
     form_phone: "கைப்பேசி எண்",
     form_type: "வாடிக்கையாளர் வகை",

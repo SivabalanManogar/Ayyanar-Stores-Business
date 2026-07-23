@@ -203,8 +203,15 @@ textarea {
   transform: translateY(-3px);
 }
 
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #FFFFFF;
+  border-color: #25D366;
+}
+
 .btn-whatsapp:hover {
   background-color: #1EBE5D;
+  color: #FFFFFF;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
 }
@@ -1685,9 +1692,17 @@ body.lang-ta .lang-toggle-btn {
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--primary-green);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   border-bottom: 2px solid var(--accent-gold);
   padding-bottom: 0.5rem;
+}
+
+.form-order-subtitle {
+  color: #D32F2F;
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-top: 0.2rem;
+  margin-bottom: 1.25rem;
 }
 
 .form-group {
