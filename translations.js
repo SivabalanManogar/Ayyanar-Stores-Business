@@ -175,7 +175,7 @@ const translations = {
     info_phone_val: "+91 97150 98017 / +91 80128 60453",
 
     info_whatsapp_heading: "WhatsApp Inquiries",
-    info_whatsapp_val: "+91 97150 98017 / +91 80128 60453",
+    info_whatsapp_val: "+91 80128 60453",
 
     info_owner_heading: "Proprietor",
     owner_name: "MANOGAR.P",
@@ -201,6 +201,7 @@ const translations = {
     form_type_retail: "Retail / Individual Customer",
     form_type_other: "Other Business",
     form_msg: "Requirements / Products Needed",
+    form_msg_placeholder: "Enter products (e.g. 1kg Rice, 2kg Dhal, 1L Oil)",
     btn_send_whatsapp: "Send via WhatsApp",
 
     // Store Showcase & Experience
@@ -397,7 +398,7 @@ const translations = {
     info_phone_val: "+91 97150 98017 / +91 80128 60453",
 
     info_whatsapp_heading: "வாட்ஸ்அப் விசாரணை",
-    info_whatsapp_val: "+91 97150 98017 / +91 80128 60453",
+    info_whatsapp_val: "+91 80128 60453",
 
     info_owner_heading: "உரிமையாளர்",
     owner_name: "மனோகர்.P",
@@ -423,6 +424,7 @@ const translations = {
     form_type_retail: "சில்லறை / தனிநபர் வாடிக்கையாளர்",
     form_type_other: "மற்ற வணிகங்கள்",
     form_msg: "தேவையான பொருட்கள் / விவரங்கள்",
+    form_msg_placeholder: "பொருட்களை உள்ளிடவும் (எ.கா. 1kg அரிசி, 2kg பருப்பு, 1L எண்ணெய்)",
     btn_send_whatsapp: "வாட்ஸ்அப் மூலம் அனுப்பவும்",
 
     // Store Showcase & Experience

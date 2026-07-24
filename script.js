@@ -367,20 +367,134 @@ document.addEventListener('DOMContentLoaded', () => {
       const phone        = document.getElementById('phone').value.trim();
       const typeSelect   = document.getElementById('customerType');
       const customerType = typeSelect.options[typeSelect.selectedIndex].text;
-      const message      = document.getElementById('message').value.trim();
+      const rawMessage   = document.getElementById('message').value.trim();
 
-      // Format WhatsApp Message in Dual Languages (English & Tamil)
-      const waText = 
-        `*NEW INQUIRY / புதிய விசாரணை*\n` +
-        `*NEW AYYANAR STORES (நியூ அய்யனார் ஸ்டோர்ஸ்)*\n\n` +
-        `👤 *Name / பெயர்:* ${name}\n` +
-        `📞 *Phone / தொலைபேசி:* ${phone}\n` +
-        `🏢 *Category / வாடிக்கையாளர் வகை:* ${customerType}\n` +
-        `📝 *Requirements / தேவைகள்:* ${message || 'N/A'}\n\n` +
-        `_Sent via New Ayyanar Stores Website (நியூ அய்யனார் ஸ்டோர்ஸ்)_`;
+      // Category Tamil Translation Mapping
+      const categoryTamilMap = {
+        'Hotel / Restaurant Owner': 'ஹோட்டல் / உணவக உரிமையாளர்',
+        'Catering Service': 'கேட்டரிங் சேவை',
+        'Bulk Order for Function': 'சுபநிகழ்ச்சி பல்க் ஆர்டர்',
+        'Retail / Individual Customer': 'சில்லறை / தனிநபர் வாடிக்கையாளர்',
+        'Other Business': 'மற்ற வணிகங்கள்'
+      };
+      const categoryTamil = categoryTamilMap[customerType] || customerType;
+
+      // Grocery Items English -> Tamil Dictionary
+      const groceryTamilDict = [
+        { en: /\b(rice|arisi)\b/gi, ta: 'அரிசி' },
+        { en: /\b(dhal|dal|paruppu|toor dal|urad dal|moong dal|chana dal)\b/gi, ta: 'பருப்பு' },
+        { en: /\b(sunflower oil)\b/gi, ta: 'சூரியகாந்தி எண்ணெய்' },
+        { en: /\b(gingelly oil|nallennai|sesame oil)\b/gi, ta: 'நல்லெண்ணெய்' },
+        { en: /\b(coconut oil|thengai ennai)\b/gi, ta: 'தேங்காய் எண்ணெய்' },
+        { en: /\b(oil|ennai)\b/gi, ta: 'எண்ணெய்' },
+        { en: /\b(ghee|nei)\b/gi, ta: 'நெய்' },
+        { en: /\b(sugar|sarkkarai|sakkarai)\b/gi, ta: 'சர்க்கரை' },
+        { en: /\b(jaggery|vellam)\b/gi, ta: 'வெல்லம்' },
+        { en: /\b(salt|uppu)\b/gi, ta: 'உப்பு' },
+        { en: /\b(wheat|godhumai|atta)\b/gi, ta: 'கோதுமை / ஆட்டா' },
+        { en: /\b(maida)\b/gi, ta: 'மைதா' },
+        { en: /\b(rava|sooji|ravai)\b/gi, ta: 'ரவை' },
+        { en: /\b(mustard|kadugu)\b/gi, ta: 'கடுகு' },
+        { en: /\b(cumin|jeera|seeragam)\b/gi, ta: 'சீரகம்' },
+        { en: /\b(pepper|milagu)\b/gi, ta: 'மிளகு' },
+        { en: /\b(tamarind|puli)\b/gi, ta: 'புளி' },
+        { en: /\b(turmeric|manjal)\b/gi, ta: 'மஞ்சள்' },
+        { en: /\b(chilli|milagai)\b/gi, ta: 'மிளகாய்' },
+        { en: /\b(coriander|dhaniya|malli)\b/gi, ta: 'கொத்தமல்லி' },
+        { en: /\b(milk|paal)\b/gi, ta: 'பால்' },
+        { en: /\b(tea|theeyilai)\b/gi, ta: 'தேயிலை' },
+        { en: /\b(coffee|kaapi)\b/gi, ta: 'காபி' },
+        { en: /\b(onion|vengayam)\b/gi, ta: 'வெங்காயம்' },
+        { en: /\b(garlic|poondu)\b/gi, ta: 'பூண்டு' },
+        { en: /\b(tomato|thakkali)\b/gi, ta: 'தக்காளி' }
+      ];
+
+      function translateItemToTamil(text) {
+        let translated = text;
+        groceryTamilDict.forEach(rule => {
+          translated = translated.replace(rule.en, rule.ta);
+        });
+        return translated;
+      }
+
+      // Step-by-Step Product Order Formatter (English & Tamil)
+      let englishItemsFormatted = 'N/A';
+      let tamilItemsFormatted = 'N/A';
+
+      if (rawMessage) {
+        const rawLines = rawMessage.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+        let itemsList = [];
+
+        rawLines.forEach(line => {
+          const subItems = line.split(/[,;\n]|\b(?:and|plus|மற்றும்)\b|&|\+/i);
+          subItems.forEach(item => {
+            const cleaned = item.trim()
+              .replace(/^[0-9]+[\.\)\-]\s*/, '')
+              .replace(/^[\-\•\*\+]\s*/, '');
+            if (cleaned) {
+              itemsList.push(cleaned);
+            }
+          });
+        });
+
+        if (itemsList.length > 0) {
+          const numberEmojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟'];
+          
+          englishItemsFormatted = '\n' + itemsList.map((item, idx) => {
+            const prefix = idx < 10 ? numberEmojis[idx] : `*${idx + 1}.*`;
+            return `   ${prefix} ${item}`;
+          }).join('\n');
+
+          tamilItemsFormatted = '\n' + itemsList.map((item, idx) => {
+            const prefix = idx < 10 ? numberEmojis[idx] : `*${idx + 1}.*`;
+            const tamilItem = translateItemToTamil(item);
+            return `   ${prefix} ${tamilItem}`;
+          }).join('\n');
+        } else {
+          englishItemsFormatted = `\n   • ${rawMessage}`;
+          tamilItemsFormatted = `\n   • ${translateItemToTamil(rawMessage)}`;
+        }
+      }
+
+      // Build English Section
+      const englishSection = 
+        `-----------------------------------------\n` +
+        `🇬🇧 *ENGLISH ORDER DETAILS*\n` +
+        `-----------------------------------------\n` +
+        `👤 *Name:* ${name}\n` +
+        `📞 *Phone:* ${phone}\n` +
+        `🏢 *Category:* ${customerType}\n\n` +
+        `📦 *ITEMS ORDERED:*${englishItemsFormatted}`;
+
+      // Build Tamil Section
+      const tamilSection = 
+        `-----------------------------------------\n` +
+        `🇮🇳 *தமிழ் ஆர்டர் விவரங்கள்*\n` +
+        `-----------------------------------------\n` +
+        `👤 *பெயர்:* ${name}\n` +
+        `📞 *கைப்பேசி:* ${phone}\n` +
+        `🏢 *வாடிக்கையாளர் வகை:* ${categoryTamil}\n\n` +
+        `📦 *ஆர்டர் செய்யப்பட்ட பொருட்கள்:*${tamilItemsFormatted}`;
+
+      // Language-Based WhatsApp Message Rules:
+      // 1. English Mode: Show English section FIRST, followed by Tamil section below it
+      // 2. Tamil Mode: Show ONLY Tamil section
+      let waText = '';
+      if (currentLang === 'ta') {
+        waText = 
+          `🛒 *NEW AYYANAR STORES - புதிய ஆர்டர்*\n\n` +
+          `${tamilSection}\n\n` +
+          `_Sent via New Ayyanar Stores Website (நியூ அய்யனார் ஸ்டோர்ஸ்)_`;
+      } else {
+        waText = 
+          `🛒 *NEW AYYANAR STORES - NEW ORDER*\n\n` +
+          `${englishSection}\n\n` +
+          `${tamilSection}\n\n` +
+          `_Sent via New Ayyanar Stores Website (நியூ அய்யனார் ஸ்டோர்ஸ்)_`;
+      }
 
       const encodedText = encodeURIComponent(waText);
-      const whatsappUrl = `https://wa.me/919715098017?text=${encodedText}`;
+      const whatsappUrl = `https://wa.me/918012860453?text=${encodedText}`;
 
       window.open(whatsappUrl, '_blank');
     });
